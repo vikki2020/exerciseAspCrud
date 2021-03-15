@@ -1,0 +1,293 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+}
+
+@if (Session["username"] != null)
+{
+    <h4>welcome @Session["username"].ToString()</h4>
+    @Html.ActionLink("Logout", "Index")
+    <!-- section banner start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div><a href="#"><img src="../../images/welcome/logo.png"></a></div>
+                </div>
+                <div class="col-md-8">
+                        <div class="menu_text">
+                            <ul>
+                                
+                                <li class="last"><a href="#"><img src="../../images/welcome/search-icon.png"></a></li>
+                                <li class="active">
+                                    <div id="myNav" class="overlay">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                        <div class="overlay-content">
+                                            <a href="index.html">Home</a>
+                                            <a href="about.html">About</a>
+                                            <a href="gallery.html">Gallery</a>
+                                            <a href="contact.html">Contact</a>
+                                        </div>
+                                    </div>
+                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+        <div class="banner_main">
+            <div class="container">
+                <div class="ram">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="taital">pet adoption</h4>
+                            <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incidid</p>
+                            <div class="banner_bt">
+                                <button class="read_bt">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 class="numbar_text">01</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section banner end -->
+    <!-- section about start -->
+    <div class="about_section">
+        <div class="about_text">
+            <div class="container">
+                <h1 class="about_taital_1"><strong><span style="color: #f7941d;">About</span> Our Stories</strong></h1>
+                <p class="magna_text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                <div class="about_bt">
+                    <button class="more_bt">Read More</button>
+                </div>
+                <div class="about">
+                    <h1 class="numbar_text">02</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section about end -->
+    <!-- section gallery start -->
+    <div class="gallery_main layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="about_taital"><strong><span style="color: #ffffff;">How about </span> these Dogs</strong></h1>
+                    <p class="sed_text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+
+                </div>
+            </div>
+            <div class="gallery_images">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="gallery_blog">
+                            <img src="../../images/welcome/gallery-img1.jpg" style="max-width: 100%; height: 300px; width: 100%;">
+                            <div class="overlay">
+                                <div class="text"><strong>PuppyDogPetAnimal</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="gallery_blog">
+                            <img src="../../images/welcome/gallery-img2.jpg" style="max-width: 100%; height: 300px; width: 100%;">
+                            <div class="overlay">
+                                <div class="text"><strong>PuppyDogPetAnimal</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_images">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="gallery_blog">
+                            <img src="../../images/welcome/gallery-img3.jpg" style="max-width: 100%; width: 100%;">
+                            <div class="overlay">
+                                <div class="text"><strong>PuppyDogPetAnimal</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="gallery_blog">
+                            <img src="../../images/welcome/gallery-img4.jpg" style="max-width: 100%; height: 300px; width: 100%;">
+                            <div class="overlay">
+                                <div class="text"><strong>PuppyDogPetAnimal</strong></div>
+                            </div>
+                        </div>
+                        <div class="gallery_blog">
+                            <img src="../../images/welcome/gallery-img5.jpg" style="max-width: 100%; height: 297px; width: 100%;">
+                            <div class="overlay">
+                                <div class="text"><strong>PuppyDogPetAnimal</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery_section_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="pet_taital">Pet adoption be part of something beautiful</h1>
+                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                    <div class="banner_bt">
+                        <button class="dog_bt">Read More</button>
+                    </div>
+                    <div class="box_3">
+                        <h1 class="numbar">03</h1>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="dog_img"><img src="../../images/welcome/dog-img.png" style="max-width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section gallery end -->
+    <!-- section get in touch start -->
+    <div class="touch_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="get_taital"><strong><span style="color: #ffffff;">reservation for visiting</span>dogs</strong></h2>
+                </div>
+            </div>
+            <div class="email_box">
+                <div class="input_main">
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Name" name="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Your Phone Numbar" name="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Your Email" name="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Massage (please indicate the number of your preferred dogs.)" rows="5" id="comment" name="Massage"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="send_btn">
+                        <button type="button" class="main_bt"> Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="touch_section_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="our_texts">Our Newsletter</h1>
+                    <div class="input-group mb-3">
+                        <input class="email_bt form-control" type="text" placeholder="Enter your email">
+                        <div class="input-group-append">
+                            <button class="subscribe_bt btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section get in touch end -->
+
+    <!-- section footer start -->
+    <div class="section_footer">
+        <div class="container">
+            <div class="mail_section">
+                <ul>
+                    <li class="footer-logo"><img src="../../images/welcome/footer-logo.png"></li>
+                    <li class="footer-logo"><img src="../../images/welcome/map-icon.png"><span class="map_text">example road 123 Brussels BE</span></li>
+                    <li class="footer-logo"><img src="../../images/welcome/call-icon.png"><span class="map_text">(+32) 9876543210</span></li>
+                    <li class="footer-logo"><img src="../../images/welcome/email-icon.png"><span class="map_text">example@gmail.com</span></li>
+                </ul>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2 class="shop_text">About Pet Shop</h2>
+                        <p class="dummy_text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2 class="shop_text">Useful Links</h2>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Pet Dictionary</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Help Links</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Pet Attitudes</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Call a Doctor</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Help a Pet</span></div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2 class="shop_text">Overview</h2>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Bacerim Dictionary</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">Help Links</span></div>
+                        <div class="image-icon"><img src="../../images/welcome/bulit-icon.png"><span class="pet_text">bacerim Attitudes</span></div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2 class="adderess_text">Instagram</h2>
+                        <div class="footer-img">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="footer-img"><img src="../../images/welcome/footer-img1.png" style="width: 100%;"></div>
+                                    <div class="footer-img"><img src="../../images/welcome/footer-img2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-img"><img src="../../images/welcome/footer-img3.png" style="width: 100%;"></div>
+                                    <div class="footer-img"><img src="../../images/welcome/footer-img4.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icon">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="icons">
+                            <ul>
+                                <li><a href="#"><img src="../../images/welcome/fb-icon.png"></a></li>
+                                <li><a href="#"><img src="../../images/welcome/twitter-icon.png"></a></li>
+                                <li><a href="#"><img src="../../images/welcome/google-icon.png"></a></li>
+                                <li><a href="#"><img src="../../images/welcome/linkedin-icon.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- section footer end -->
+
+}
+else
+{
+    Response.Redirect("Index");
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/plugin")
+}
+
+<script type="text/javascript">
+    function preventBack() {
+        window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () {
+        null;
+    }
+</script>
+
