@@ -72,6 +72,7 @@ namespace exerciseAsp.DAL
                         sqlconn.Close();
 
             }
+            return d;
       
         }
         //Update or Edit
