@@ -6,8 +6,8 @@
 @if (Session["username"] != null)
 {
     <h4>welcome @Session["username"].ToString()</h4>
-    @Html.ActionLink("Logout", "Index")
-    @Html.ActionLink("Admin/Add Dog", "Contact", "Dogs")
+    @Html.ActionLink("Logout", "Index")<br/>
+    @Html.ActionLink("Admin/Add Dog", "Create", "Dogs")
     <!-- section banner start -->
     <div class="header_section">
         <div class="container-fluid">
