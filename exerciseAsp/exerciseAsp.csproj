@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DogsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserLoginController.cs" />
     <Compile Include="Controllers\ValidateController.cs" />
@@ -214,6 +215,7 @@
     <Content Include="Views\Validate\Index.cshtml" />
     <Content Include="Views\UserLogin\Index.cshtml" />
     <Content Include="Views\UserLogin\Welcome.cshtml" />
+    <Content Include="Views\Dogs\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

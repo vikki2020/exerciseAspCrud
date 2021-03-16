@@ -7,6 +7,7 @@
 {
     <h4>welcome @Session["username"].ToString()</h4>
     @Html.ActionLink("Logout", "Index")
+    @Html.ActionLink("Admin/Add Dog", "Contact", "Dogs")
     <!-- section banner start -->
     <div class="header_section">
         <div class="container-fluid">
@@ -15,26 +16,26 @@
                     <div><a href="#"><img src="../../images/welcome/logo.png"></a></div>
                 </div>
                 <div class="col-md-8">
-                        <div class="menu_text">
-                            <ul>
-                                
-                                <li class="last"><a href="#"><img src="../../images/welcome/search-icon.png"></a></li>
-                                <li class="active">
-                                    <div id="myNav" class="overlay">
-                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                        <div class="overlay-content">
-                                            <a href="index.html">Home</a>
-                                            <a href="about.html">About</a>
-                                            <a href="gallery.html">Gallery</a>
-                                            <a href="contact.html">Contact</a>
-                                        </div>
-                                    </div>
-                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="menu_text">
+                        <ul>
 
+                            <li class="last"><a href="#"><img src="../../images/welcome/search-icon.png"></a></li>
+                            <li class="active">
+                                <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="overlay-content">
+                                        <a href="index.html">Home</a>
+                                        <a href="about.html">About</a>
+                                        <a href="gallery.html">Gallery</a>
+                                        <a href="contact.html">Contact</a>
+                                    </div>
+                                </div>
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+                            </li>
+                        </ul>
                     </div>
+
+                </div>
             </div>
         </div>
         <div class="banner_main">
